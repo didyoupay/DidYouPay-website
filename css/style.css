@@ -264,7 +264,11 @@ a:hover {
 .hero-logo {
   width: clamp(12rem, 64vw, 20rem);
   height: auto;
-  margin-bottom: var(--space-8);
+}
+
+.hero__brand {
+  max-width: none;
+  margin: 0 0 var(--space-8);
 }
 
 .hero .lead {
@@ -363,7 +367,17 @@ p {
 .card-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr;
+  align-items: stretch;
   gap: var(--space-4);
+}
+
+.card-grid > .card {
+  height: 100%;
+}
+
+.card-grid > .card + .card {
+  margin-top: 0;
 }
 
 .card__heading {
@@ -517,6 +531,62 @@ summary {
 
 details > :not(summary) {
   color: var(--color-text-secondary);
+}
+
+.faq-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.faq-list > .faq-item + .faq-item {
+  margin-top: 0;
+}
+
+.faq-item,
+.faq-item:last-child {
+  border: 1px solid var(--color-border);
+}
+
+.faq-question {
+  min-height: var(--tap-target);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  font-size: 1rem;
+  line-height: 1.4;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.faq-item[open] .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  overflow: hidden;
+}
+
+.faq-answer__content {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-answer__content > :last-child {
+  margin-bottom: 0;
 }
 
 .site-footer {

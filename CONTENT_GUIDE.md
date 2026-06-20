@@ -24,6 +24,42 @@ The easier it is to leave, the easier it is to forget to pay later.
 
 The challenge isn’t remembering. It’s remembering before the payment deadline.
 
+## Brand Principles
+
+These principles define the long-term direction of Did You Pay?. They guide product decisions, website content and future development. They are intended to remain stable over time and should only be changed after careful consideration.
+
+### Solve a Real Problem
+
+Did You Pay? exists to solve a real-world problem experienced by real people. Every feature should help users avoid unnecessary penalty charges caused by forgotten payments.
+
+### Simplicity First
+
+The app should be simple to understand and simple to use. Features should reduce effort, not add to it.
+
+### Privacy by Design
+
+Every installation of Did You Pay? works independently on the user’s device.
+
+The app is designed to remind users when they need it, not to build a history of where they have been.
+
+Apart from information needed to manage the current reminder, journeys are not tracked or shared.
+
+### No Subscription
+
+Did You Pay? will never require a subscription.
+
+### Never Ad-Supported
+
+Did You Pay? will never be supported by advertising.
+
+### A Genuinely Useful Free Version
+
+The free version is fully functional and allows users to select one location.
+
+Users can change their selected location whenever they wish, and the free version will continue to receive future app updates.
+
+The paid version simply unlocks the ability to select multiple or all available locations.
+
 ## Home Page
 
 ### Hero
@@ -162,7 +198,107 @@ Approved content has not yet been defined for this section. Add content here onl
 
 ## FAQ
 
-Approved content has not yet been defined for this section. Add content here only after it has been reviewed and approved.
+### 1. How does Did You Pay? work?
+
+Choose the parking and road charge locations you want reminders for.
+
+Once you’ve chosen a location, it’s ready whenever you visit—whether that’s tomorrow, next week or next month.
+
+When you visit one of your chosen locations, Did You Pay? asks if you’d like a reminder.
+
+### 2. Which locations are supported?
+
+Did You Pay? supports a growing range of UK locations where payment is made after you leave.
+
+These include selected airports, barrier-free car parks, toll roads, bridges and tunnels.
+
+A full list is available on the Supported Locations page and new locations are added over time.
+
+If you can’t find a location, email locations@didyoupay.co.uk and we’ll look into whether we can add it.
+
+### 3. Do I need to set a reminder every time I travel?
+
+No.
+
+Once you’ve chosen a location, it’s ready whenever you visit—whether that’s tomorrow, next week or next month.
+
+There’s no need to remember to create a reminder before each journey.
+
+### 4. Does Did You Pay? know when I’ve paid?
+
+No.
+
+Did You Pay? doesn’t know whether you’ve made a payment.
+
+It’s designed to remind you—not to monitor your payments.
+
+You decide when a reminder is no longer needed.
+
+### 5. Is my location shared?
+
+No.
+
+Every installation of Did You Pay? works independently on your device.
+
+The app doesn’t build a history of where you’ve been or keep a record of every reminder that’s been triggered.
+
+Apart from information needed to manage your current reminder, your journeys aren’t tracked or shared.
+
+Did You Pay? is designed to remind you when you need it—not to monitor where you’ve been.
+
+### 6. What if I can’t find a location?
+
+We’re always looking to expand the locations supported by Did You Pay?.
+
+If you can’t find the location you’re looking for, email locations@didyoupay.co.uk.
+
+We’ll look into whether we can add it to a future update.
+
+### 7. Is there a free version of Did You Pay?
+
+Yes.
+
+The free version of Did You Pay? is fully functional and allows you to select one location to receive reminders for.
+
+You can change your selected location whenever you like, and the free version will continue to receive all future app updates.
+
+Upgrading to the paid version unlocks the ability to select multiple or all available locations, making Did You Pay? a true set and forget experience.
+
+Did You Pay? will never require a subscription.
+
+Did You Pay? will never be supported by advertising.
+
+### 8. Why was Did You Pay? created?
+
+Did You Pay? was inspired by two real experiences within our family.
+
+On both occasions, the intention to pay was there. The payment wasn’t forgotten because anyone was careless—it was forgotten because life simply moved on.
+
+That’s when we realised something.
+
+The challenge isn’t remembering. It’s remembering before the payment deadline.
+
+The easier it is to leave, the easier it is to forget to pay later.
+
+That’s why we created Did You Pay?—to help people avoid unnecessary penalty charges caused by forgotten payments.
+
+### 9. Does Did You Pay? work in the background?
+
+Yes.
+
+Did You Pay? is designed to work quietly in the background so it can recognise when you visit one of your chosen locations.
+
+There’s no need to open the app before every journey.
+
+For the best experience, you’ll need to allow the permissions requested during setup.
+
+### 10. Why does Did You Pay? need location access?
+
+Did You Pay? uses location access only to recognise when you visit one of your chosen locations and to offer you a reminder.
+
+The app isn’t interested in tracking where you’ve been.
+
+Every installation works independently on your device, and apart from information needed to manage your current reminder, your journeys aren’t tracked or shared.
 
 ## Contact & Support
 
