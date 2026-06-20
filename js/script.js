@@ -146,13 +146,14 @@ if (locationSearch && locationGroups && locationEmpty) {
         return;
       }
 
-      const group = document.createElement('section');
-      const groupHeading = document.createElement('h2');
+      const group = document.createElement('details');
+      const groupHeading = document.createElement('summary');
       const list = document.createElement('ul');
 
       group.className = 'location-group card';
-      groupHeading.className = 'card__heading';
-      groupHeading.textContent = `${heading} (${categoryLocations.length})`;
+      group.open = true;
+      groupHeading.className = 'location-group__heading';
+      groupHeading.textContent = heading;
       list.className = 'location-list';
 
       categoryLocations.forEach(({ name }) => {
