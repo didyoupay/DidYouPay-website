@@ -90,7 +90,7 @@ Never use colour as the only way to communicate state. Pair it with text, an ico
 
 TODO: Approve and add the final colour values, including hover, active, focus and disabled state values where needed.
 
-TODO: Decide whether a dark colour scheme will be supported; do not infer one from the operating system until its full palette has been designed and tested.
+The website uses a dark theme to remain visually consistent with the current iOS app. Its semantic colour roles are implemented with temporary system-derived values until the final palette is approved.
 
 ## 6. Typography
 
@@ -142,12 +142,13 @@ Suggested starting tokens:
   --space-8: 2rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  --radius-small: TODO;
-  --radius-medium: TODO;
+  --radius-small: 0.75rem;
+  --radius-medium: 1rem;
+  --radius-large: 1.5rem;
 }
 ```
 
-TODO: Confirm corner-radius values after the app interface and approved assets are available for comparison.
+These corner-radius values are based on the proportions in the current iOS app screenshots. Use the small radius for buttons and fields, the medium radius for cards and the large radius only for larger grouped surfaces.
 
 ## 8. Responsive Breakpoints
 
@@ -378,8 +379,6 @@ Every future Codex change to this repository must follow `DESIGN_SYSTEM.md`.
 - Add and document the approved logo master PNG.
 - Add and document the approved app icon master PNG, then export favicon sizes.
 - Approve semantic colour values and interaction-state colours.
-- Decide whether the website will support a dark colour scheme.
 - Confirm approved Manrope font files, source and required weights.
-- Confirm shared corner-radius values.
 - Select and document the contact/support channel before building a form.
 - Define production export sizes for logos, icons and app screenshots.
