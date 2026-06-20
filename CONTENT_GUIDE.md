@@ -306,7 +306,123 @@ Approved content has not yet been defined for this section. Add content here onl
 
 ## Privacy Messaging
 
-Approved content has not yet been defined for this section. Add content here only after it has been reviewed and approved.
+### Privacy Policy
+
+Last updated: 20 June 2026
+
+#### Introduction
+
+Your privacy is important to us.
+
+Did You Pay? has been designed to help you remember to make payments after leaving selected locations while collecting as little information about you as possible.
+
+This Privacy Policy explains what information the app uses, how it is used and the choices available to you.
+
+#### Who is responsible for Did You Pay?
+
+Did You Pay? is responsible for this Privacy Policy and for the limited information described in this policy.
+
+If you have any questions about this Privacy Policy or how Did You Pay? works, please contact:
+
+[privacy@didyoupay.co.uk](mailto:privacy@didyoupay.co.uk)
+
+#### Our Privacy Philosophy
+
+Privacy has been a core design principle of Did You Pay? from the very beginning.
+
+The app is designed to remind you when you need it—not to monitor where you’ve been.
+
+Every installation of Did You Pay? works independently on your device.
+
+The app is intended to minimise the amount of information it uses while still providing reliable reminders.
+
+#### Information We Collect
+
+Did You Pay? does not require you to create an account.
+
+The app does not ask for your:
+
+* Name
+* Address
+* Email address
+* Telephone number
+* Payment details
+
+The only permissions requested are those required for the app to provide reminder functionality, such as location access and notifications.
+
+#### Location Permissions
+
+Did You Pay? uses your device’s location only to recognise when you visit one of the locations you have selected within the app.
+
+This allows the app to offer you a reminder that you may need to make a payment later.
+
+The app does not use your location to build a history of your journeys or to monitor your movements.
+
+Location permissions can be changed at any time through your device’s settings, although doing so may reduce the app’s ability to provide reminders.
+
+#### How Your Information Is Stored
+
+Your selected locations and reminders are stored on your device.
+
+Did You Pay? does not require user accounts or cloud synchronisation for its core functionality. As a result, your selected locations and reminders remain on your device and are not uploaded to our servers.
+
+The app does not build a history of where you have travelled or keep a permanent record of every reminder that has been triggered.
+
+Apart from the information needed to manage your current reminders, your journeys are not stored.
+
+#### Information We Share
+
+Did You Pay? does not sell your personal information.
+
+Did You Pay? does not share your location history.
+
+Did You Pay? does not use your information for advertising.
+
+Because Did You Pay? does not require servers to operate its core reminder functionality, your selected locations and reminders are not transmitted to us as part of the normal operation of the app.
+
+#### Advertising
+
+Did You Pay? will never be supported by advertising.
+
+The app does not use advertising networks or advertising identifiers, and your information is never used to deliver advertising.
+
+#### Analytics and Crash Reporting
+
+Did You Pay? does not use third-party analytics services.
+
+Did You Pay? does not use third-party crash reporting services.
+
+If this ever changes in a future version, this Privacy Policy will be updated before those services are introduced.
+
+#### Your Choices
+
+You remain in control of how Did You Pay? works.
+
+At any time you can:
+
+* Change the locations you have selected.
+* Remove reminders.
+* Disable notifications.
+* Change location permissions in your device settings.
+* Delete the app from your device.
+
+#### Children’s Privacy
+
+Did You Pay? is intended for general use and is not specifically directed at children under the age of 13.
+
+We do not knowingly collect personal information from children.
+
+#### Changes to This Privacy Policy
+
+From time to time we may update this Privacy Policy to reflect improvements to the app or changes in legal requirements.
+
+The latest version will always be available on the Did You Pay? website.
+
+#### Contact Us
+
+If you have any questions about this Privacy Policy, please contact:
+
+[privacy@didyoupay.co.uk](mailto:privacy@didyoupay.co.uk)
 
 ## App Store Description
 
