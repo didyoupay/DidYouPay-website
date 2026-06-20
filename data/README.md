@@ -32,4 +32,4 @@ Keep all records listed alphabetically by `name`.
 
 Only website-facing location information belongs in `locations.json`. Do not add coordinates, geofence information, radius values, internal IDs, payment instructions, URLs or app-specific metadata.
 
-The current `Example Location` record is a placeholder. Replace it when the first real supported locations are added.
+The example record above demonstrates the schema only. Add and maintain all live location names exclusively in `locations.json`.
