@@ -116,6 +116,89 @@ if (faqItems.length) {
   });
 }
 
+const locationSearch = document.querySelector('[data-location-search]');
+const locationGroups = document.querySelector('[data-location-groups]');
+const locationEmpty = document.querySelector('[data-location-empty]');
+
+if (locationSearch && locationGroups && locationEmpty) {
+  const locationCategories = [
+    ['Airport', 'Airports'],
+    ['Barrier-Free Car Park', 'Barrier-Free Car Parks'],
+    ['Bridge', 'Bridges'],
+    ['Toll Road', 'Toll Roads'],
+    ['Tunnel', 'Tunnels'],
+  ];
+  const allowedCategories = new Set(locationCategories.map(([category]) => category));
+  let locations = [];
+
+  const renderLocations = () => {
+    const query = locationSearch.value.trim().toLocaleLowerCase('en-GB');
+    const matchingLocations = locations.filter(({ name }) => (
+      name.toLocaleLowerCase('en-GB').includes(query)
+    ));
+
+    locationGroups.replaceChildren();
+
+    locationCategories.forEach(([category, heading]) => {
+      const categoryLocations = matchingLocations.filter((location) => location.category === category);
+
+      if (!categoryLocations.length) {
+        return;
+      }
+
+      const group = document.createElement('section');
+      const groupHeading = document.createElement('h2');
+      const list = document.createElement('ul');
+
+      group.className = 'location-group card';
+      groupHeading.className = 'card__heading';
+      groupHeading.textContent = `${heading} (${categoryLocations.length})`;
+      list.className = 'location-list';
+
+      categoryLocations.forEach(({ name }) => {
+        const item = document.createElement('li');
+        item.textContent = name;
+        list.append(item);
+      });
+
+      group.append(groupHeading, list);
+      locationGroups.append(group);
+    });
+
+    locationEmpty.hidden = matchingLocations.length > 0;
+  };
+
+  locationSearch.addEventListener('input', renderLocations);
+
+  fetch('data/locations.json')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Location data could not be loaded.');
+      }
+
+      return response.json();
+    })
+    .then((data) => {
+      if (!Array.isArray(data)) {
+        return;
+      }
+
+      locations = data
+        .filter((location) => (
+          location
+          && typeof location.name === 'string'
+          && allowedCategories.has(location.category)
+        ))
+        .sort((first, second) => first.name.localeCompare(second.name, 'en-GB', { sensitivity: 'base' }));
+
+      renderLocations();
+    })
+    .catch(() => {
+      locations = [];
+      renderLocations();
+    });
+}
+
 document.querySelectorAll('[data-current-year]').forEach((year) => {
   year.textContent = new Date().getFullYear();
 });

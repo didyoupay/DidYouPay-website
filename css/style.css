@@ -589,6 +589,39 @@ details > :not(summary) {
   margin-bottom: 0;
 }
 
+.location-search {
+  max-width: 32rem;
+  margin-top: var(--space-6);
+}
+
+.location-groups {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.location-groups > .location-group + .location-group {
+  margin-top: 0;
+}
+
+.location-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.location-list li {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+  background: var(--color-surface-raised);
+}
+
+.location-empty {
+  margin: 0;
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
