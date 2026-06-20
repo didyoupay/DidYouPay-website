@@ -52,9 +52,13 @@ The approved logo is a PNG and is the authoritative website logo asset. The iOS 
 - Preserve comfortable clear space around both assets.
 - Use the wordmark or plain text product name when an image would add no value.
 
-TODO: Add the approved logo master PNG and record its filename and intrinsic dimensions.
+Approved source assets:
 
-TODO: Add the approved app icon master PNG and export the required favicon sizes.
+- Website logo: `images/branding/logo/did-you-pay-logo-master.png` (1254 × 1254 pixels).
+- Navigation logo: `images/branding/logo/did-you-pay-logo-header.png` (1678 × 280 pixels, transparent background).
+- App icon: `images/branding/icon/app-icon-1024.png` (1024 × 1024 pixels).
+
+Published browser assets are exported directly from the approved app icon at their required sizes.
 
 ## 5. Colour System
 
@@ -90,7 +94,9 @@ Never use colour as the only way to communicate state. Pair it with text, an ico
 
 TODO: Approve and add the final colour values, including hover, active, focus and disabled state values where needed.
 
-The website uses a dark theme to remain visually consistent with the current iOS app. Its semantic colour roles are implemented with temporary system-derived values until the final palette is approved.
+Theme System v1.0 follows the device appearance automatically. The light theme is the default CSS variable set, while `@media (prefers-color-scheme: dark)` applies the dark app-inspired values. `color-scheme: light dark` allows browser-provided controls to follow the same appearance. No JavaScript or manual theme control is used.
+
+Dark mode remains the primary visual reference. Both themes use the same semantic colour roles and component styling; only their variable values change. The roles remain system-derived until the final brand palette is approved.
 
 ## 6. Typography
 

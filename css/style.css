@@ -1,27 +1,30 @@
 /* Website Framework v1.0 */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
   font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 
-  /* Semantic colour roles. Exact brand values remain pending approval. */
+  /* Theme System v1.0: light defaults using system-derived semantic roles. */
   --color-primary: Highlight;
   --color-primary-hover: color-mix(in srgb, Highlight 88%, CanvasText);
   --color-primary-active: color-mix(in srgb, Highlight 76%, Canvas);
   --color-on-primary: HighlightText;
-  --color-background: color-mix(in srgb, Canvas 97%, Highlight 3%);
-  --color-surface: color-mix(in srgb, CanvasText 7%, Canvas);
-  --color-surface-raised: color-mix(in srgb, CanvasText 10%, Canvas);
-  --color-border: color-mix(in srgb, CanvasText 16%, Canvas);
-  --color-border-strong: color-mix(in srgb, Highlight 46%, Canvas);
+  --color-background: color-mix(in srgb, Canvas 98%, Highlight 2%);
+  --color-surface: color-mix(in srgb, CanvasText 4%, Canvas);
+  --color-surface-raised: color-mix(in srgb, CanvasText 7%, Canvas);
+  --color-border: color-mix(in srgb, CanvasText 18%, Canvas);
+  --color-border-strong: color-mix(in srgb, Highlight 50%, Canvas);
   --color-text-primary: CanvasText;
-  --color-text-secondary: color-mix(in srgb, CanvasText 68%, Canvas);
+  --color-text-secondary: color-mix(in srgb, CanvasText 72%, Canvas);
   --color-success: Highlight;
   --color-attention: CanvasText;
   --color-error: CanvasText;
   --color-focus: Highlight;
+  --color-primary-soft: color-mix(in srgb, var(--color-primary) 12%, transparent);
+  --color-primary-subtle: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  --color-header-background: color-mix(in srgb, var(--color-background) 92%, transparent);
 
   --font-family-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-size-body: 1rem;
@@ -46,7 +49,20 @@
   --radius-large: 1.5rem;
   --tap-target: 2.75rem;
   --transition-fast: 160ms ease;
-  --shadow-card: 0 0.75rem 2.5rem color-mix(in srgb, Canvas 28%, transparent);
+  --shadow-card: 0 0.75rem 2.5rem color-mix(in srgb, CanvasText 12%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-background: color-mix(in srgb, Canvas 97%, Highlight 3%);
+    --color-surface: color-mix(in srgb, CanvasText 7%, Canvas);
+    --color-surface-raised: color-mix(in srgb, CanvasText 10%, Canvas);
+    --color-border: color-mix(in srgb, CanvasText 16%, Canvas);
+    --color-border-strong: color-mix(in srgb, Highlight 46%, Canvas);
+    --color-text-secondary: color-mix(in srgb, CanvasText 68%, Canvas);
+    --shadow-card: 0 0.75rem 2.5rem color-mix(in srgb, Canvas 28%, transparent);
+  }
 }
 
 *,
@@ -139,7 +155,7 @@ a:hover {
   position: relative;
   z-index: 100;
   border-bottom: 1px solid var(--color-border);
-  background: color-mix(in srgb, var(--color-background) 92%, transparent);
+  background: var(--color-header-background);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
 }
@@ -163,6 +179,11 @@ a:hover {
   letter-spacing: -0.025em;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.site-logo {
+  width: clamp(6.5rem, 28vw, 8rem);
+  height: auto;
 }
 
 .nav-toggle {
@@ -224,7 +245,7 @@ a:hover {
 
 .site-navigation a[aria-current="page"] {
   color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+  background: var(--color-primary-soft);
 }
 
 .js .site-navigation {
@@ -389,7 +410,7 @@ p {
 
 .button--secondary:hover {
   border-color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  background: var(--color-primary-subtle);
 }
 
 .button:disabled,
@@ -535,6 +556,10 @@ details > :not(summary) {
 }
 
 @media (min-width: 48rem) {
+  .site-logo {
+    width: 9rem;
+  }
+
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -549,6 +574,10 @@ details > :not(summary) {
   .header-inner {
     min-height: 5rem;
     flex-wrap: nowrap;
+  }
+
+  .site-logo {
+    width: 10rem;
   }
 
   .nav-toggle {
@@ -585,6 +614,10 @@ details > :not(summary) {
 @media (min-width: 80rem) {
   :root {
     --layout-page-max: 76rem;
+  }
+
+  .site-logo {
+    width: 10.5rem;
   }
 }
 
