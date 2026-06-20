@@ -261,6 +261,21 @@ a:hover {
   padding-block: clamp(var(--space-12), 10vw, var(--space-20)) var(--space-8);
 }
 
+.hero-logo {
+  width: clamp(12rem, 64vw, 20rem);
+  height: auto;
+  margin-bottom: var(--space-8);
+}
+
+.hero .lead {
+  margin-bottom: var(--space-3);
+}
+
+.hero__supporting {
+  max-width: 54ch;
+  color: var(--color-text-secondary);
+}
+
 .section {
   padding-block: 0 clamp(var(--space-12), 8vw, var(--space-20));
 }
