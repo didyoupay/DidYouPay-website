@@ -82,9 +82,75 @@ Did You Pay?
 
 That question became the idea behind an app that helps people remember before a forgotten payment becomes an unnecessary penalty charge.
 
-## How It Works
+### How It Works
 
-Approved content has not yet been defined for this section. Add content here only after it has been reviewed and approved.
+#### Choose Locations
+
+Choose the parking and road charge locations you want reminders for.
+
+Once selected, they’re ready whenever you visit—whether that’s tomorrow, next week or next month.
+
+#### Receive a Reminder
+
+When you visit one of your chosen locations, Did You Pay? asks if you’d like a reminder.
+
+### Supported Locations
+
+Did You Pay? supports a growing range of UK locations where payment is made after you leave.
+
+These include selected:
+
+- Airports
+- Barrier-free car parks
+- Toll roads
+- Bridges
+- Tunnels
+
+#### Primary CTA
+
+View Supported Locations
+
+#### Supporting Message
+
+Can’t find a location?
+
+Let us know and we’ll look into whether we can add it.
+
+##### Email:
+
+locations@didyoupay.co.uk
+
+### FAQ Preview
+
+The Home Page should display the following three frequently asked questions as a preview only.
+
+- How does Did You Pay? work?
+- Which locations are supported?
+- Does Did You Pay? know when I’ve paid?
+
+#### Primary CTA
+
+View All FAQs
+
+### Support
+
+Need help or have a question?
+
+Whether you’ve found a bug, have a suggestion, or just need some help using Did You Pay?, we’re here to help.
+
+#### Primary CTA
+
+Contact Support
+
+#### Supporting Information
+
+##### General support:
+
+help@didyoupay.co.uk
+
+##### Location requests:
+
+locations@didyoupay.co.uk
 
 ## Why Use Did You Pay?
 
