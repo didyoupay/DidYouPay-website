@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Did You Pay? supports a growing range of UK locations where payment is made after you leave.">
   <title>Supported locations | Did You Pay?</title>
+  <link rel="canonical" href="https://didyoupay.co.uk/supported-locations.html">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header"><div class="container header-inner"><a class="site-name" href="index.html"><img class="site-logo" src="images/branding/logo/did-you-pay-logo-header.png" width="1678" height="280" alt="Did You Pay?"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button><nav id="site-navigation" class="site-navigation" aria-label="Primary navigation"><ul><li><a href="index.html">Home</a></li><li><a href="faq.html">FAQ</a></li><li><a href="supported-locations.html" aria-current="page">Locations</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="contact.html">Contact</a></li><li><a href="release-notes.html">Release notes</a></li></ul></nav></div></header>
+  <header class="site-header"><div class="container header-inner"><a class="site-name" href="index.html"><img class="site-logo" src="images/branding/logo/did-you-pay-logo-header-192.png" srcset="images/branding/logo/did-you-pay-logo-header-192.png 192w, images/branding/logo/did-you-pay-logo-header-384.png 384w" sizes="(min-width: 80rem) 10.5rem, (min-width: 64rem) 10rem, (min-width: 48rem) 9rem, clamp(6.5rem, 28vw, 8rem)" width="192" height="32" alt="Did You Pay?"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button><nav id="site-navigation" class="site-navigation" aria-label="Primary navigation"><ul><li><a href="index.html">Home</a></li><li><a href="faq.html">FAQ</a></li><li><a href="supported-locations.html" aria-current="page">Locations</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="contact.html">Contact</a></li><li><a href="release-notes.html">Release notes</a></li></ul></nav></div></header>
   <main id="main-content">
     <section class="page-heading">
       <div class="container content-width">
@@ -29,6 +30,8 @@
       <div class="container content-width">
         <div class="location-groups" data-location-groups></div>
         <p class="location-empty card" role="status" aria-live="polite" hidden data-location-empty>No matching locations found.</p>
+        <p class="location-empty card" role="alert" hidden data-location-error>We couldn’t load the list of supported locations. Please try again later.</p>
+        <noscript><p class="location-empty card">JavaScript is required to display and search the list of supported locations.</p></noscript>
       </div>
     </section>
 

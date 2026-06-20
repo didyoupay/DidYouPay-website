@@ -174,10 +174,6 @@ Need help or have a question?
 
 Whether you’ve found a bug, have a suggestion, or just need some help using Did You Pay?, we’re here to help.
 
-#### Primary CTA
-
-Contact Support
-
 #### Supporting Information
 
 ##### General support:
@@ -194,9 +190,67 @@ Approved content has not yet been defined for this section. Add content here onl
 
 ## Supported Locations
 
-Approved content has not yet been defined for this section. Add content here only after it has been reviewed and approved.
+### Page Header
+
+#### Title
+
+Supported Locations
+
+#### Introduction
+
+Did You Pay? supports a growing range of UK locations where payment is made after you leave.
+
+### Search
+
+#### Label
+
+Search locations
+
+#### No Matching Locations
+
+No matching locations found.
+
+#### Loading Error
+
+We couldn’t load the list of supported locations. Please try again later.
+
+#### No JavaScript Message
+
+JavaScript is required to display and search the list of supported locations.
+
+### Category Headings
+
+* Airports
+* Barrier-Free Car Parks
+* Toll Roads
+* Bridges
+* Tunnels
+
+### Request a Location
+
+#### Heading
+
+Can’t find a location?
+
+#### Body
+
+Let us know and we’ll look into whether we can add it.
+
+#### Email:
+
+locations@didyoupay.co.uk
 
 ## FAQ
+
+### Page Header
+
+#### Title
+
+FAQ
+
+#### Introduction
+
+Answers to the questions we’re most frequently asked about Did You Pay?.
 
 ### 1. How does Did You Pay? work?
 
@@ -300,9 +354,76 @@ The app isn’t interested in tracking where you’ve been.
 
 Every installation works independently on your device, and apart from information needed to manage your current reminder, your journeys aren’t tracked or shared.
 
+### Final Support Card
+
+#### Heading
+
+Still have a question?
+
+#### Body
+
+If you can’t find the answer you’re looking for, we’re happy to help.
+
+#### General support
+
+help@didyoupay.co.uk
+
+#### Location requests
+
+locations@didyoupay.co.uk
+
 ## Contact & Support
 
-Approved content has not yet been defined for this section. Add content here only after it has been reviewed and approved.
+### Page Header
+
+#### Title
+
+Contact & Support
+
+#### Introduction
+
+We’re here to help.
+
+If you need help using Did You Pay?, have a question, or would like to report a problem, we’d be happy to hear from you.
+
+### General Support
+
+#### Introduction
+
+For:
+
+* Using the app
+* Reporting bugs
+* Suggestions and feedback
+* General questions
+
+#### Email:
+
+help@didyoupay.co.uk
+
+### Location Requests
+
+#### Introduction
+
+Can’t find a location?
+
+#### Email:
+
+locations@didyoupay.co.uk
+
+#### Supporting Text
+
+We’ll look into whether we can add it to a future update.
+
+### Before You Contact Us
+
+#### Text
+
+You may find the answer more quickly on our FAQ page.
+
+#### Primary CTA
+
+View FAQs
 
 ## Privacy Messaging
 
@@ -423,6 +544,139 @@ The latest version will always be available on the Did You Pay? website.
 If you have any questions about this Privacy Policy, please contact:
 
 [privacy@didyoupay.co.uk](mailto:privacy@didyoupay.co.uk)
+
+## Terms of Use
+
+Last updated: 20 June 2026
+
+### Introduction
+
+Welcome to Did You Pay?
+
+These Terms of Use explain the conditions for using the Did You Pay? app and website. By using Did You Pay?, you agree to these terms.
+
+### Purpose of the App
+
+Did You Pay? is designed to help you remember to make payments after leaving selected parking locations and road charges.
+
+The app provides reminders only.
+
+Did You Pay? does not collect payments, process transactions or communicate with parking operators or road charging authorities.
+
+Did You Pay? is designed to help you avoid unnecessary penalty charges by reminding you to pay before the payment deadline. It does not replace your responsibility to check local payment requirements.
+
+### Your Responsibility
+
+You remain responsible for checking whether a payment is required, understanding the applicable payment deadline and ensuring payment is made on time.
+
+While Did You Pay? is designed to provide reliable reminders, no reminder system can guarantee that every reminder will be received or acted upon.
+
+Always check the signs and payment conditions displayed at the location you visit.
+
+### Supported Locations
+
+The list of supported locations is updated from time to time.
+
+While we make every effort to keep the information accurate, locations, payment arrangements and operating conditions can change.
+
+Always rely on the information displayed at the location itself.
+
+### Availability
+
+We aim to keep Did You Pay? available and working reliably.
+
+However, we cannot guarantee uninterrupted operation and may update, improve or withdraw features from time to time.
+
+### Intellectual Property
+
+The Did You Pay? name, logo, branding, website content and application are protected by intellectual property laws.
+
+They may not be copied, reproduced, distributed or used without prior written permission.
+
+### Limitation of Liability
+
+Did You Pay? is provided to assist you in remembering to make payments.
+
+To the fullest extent permitted by law, Did You Pay? accepts no responsibility for parking charges, penalty charges, tolls, fines, losses or other costs arising from missed reminders, incorrect location selection, disabled permissions, device settings or circumstances beyond our reasonable control.
+
+Nothing in these Terms limits any rights that cannot legally be excluded under applicable law.
+
+### Changes to These Terms
+
+We may update these Terms of Use from time to time.
+
+The latest version will always be available on the Did You Pay? website.
+
+### Contact
+
+If you have any questions about these Terms of Use, please contact:
+
+[legal@didyoupay.co.uk](mailto:legal@didyoupay.co.uk)
+
+## Release Notes
+
+### Page Header
+
+#### Title
+
+Release Notes
+
+#### Introduction
+
+See what’s new in each version of Did You Pay?.
+
+### Version 1.0.0
+
+#### Release date:
+
+To be updated when the app is released.
+
+#### Initial Release
+
+##### New Features
+
+* Automatic reminders for selected locations.
+* Manual reminders.
+* Siri Shortcuts support.
+* Light and Dark mode.
+* Searchable supported locations.
+* Privacy-first design.
+* Free version supporting one selected location.
+* Optional paid upgrade to unlock multiple and all supported locations.
+
+##### Improvements
+
+* Initial public release.
+
+##### Bug Fixes
+
+* None.
+
+##### Known Issues
+
+* None.
+
+### Future Releases
+
+Future versions of Did You Pay? will be added to this page as they are released.
+
+## Page Not Found
+
+### Error Label
+
+Error 404
+
+### Heading
+
+Page not found
+
+### Message
+
+The page may have moved, or the address may be incorrect.
+
+### Primary CTA
+
+Return to the home page
 
 ## App Store Description
 

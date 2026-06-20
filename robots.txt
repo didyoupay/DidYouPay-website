@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://didyoupay.co.uk/sitemap.xml

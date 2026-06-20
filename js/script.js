@@ -119,19 +119,33 @@ if (faqItems.length) {
 const locationSearch = document.querySelector('[data-location-search]');
 const locationGroups = document.querySelector('[data-location-groups]');
 const locationEmpty = document.querySelector('[data-location-empty]');
+const locationError = document.querySelector('[data-location-error]');
 
-if (locationSearch && locationGroups && locationEmpty) {
+if (locationSearch && locationGroups && locationEmpty && locationError) {
   const locationCategories = [
     ['Airport', 'Airports'],
     ['Barrier-Free Car Park', 'Barrier-Free Car Parks'],
-    ['Bridge', 'Bridges'],
     ['Toll Road', 'Toll Roads'],
+    ['Bridge', 'Bridges'],
     ['Tunnel', 'Tunnels'],
   ];
+  const locationLoadStates = {
+    loading: 'loading',
+    complete: 'complete',
+    failed: 'failed',
+  };
   const allowedCategories = new Set(locationCategories.map(([category]) => category));
   let locations = [];
+  let locationLoadState = locationLoadStates.loading;
+
+  locationSearch.disabled = true;
+  locationGroups.setAttribute('aria-busy', 'true');
 
   const renderLocations = () => {
+    if (locationLoadState !== locationLoadStates.complete) {
+      return;
+    }
+
     const query = locationSearch.value.trim().toLocaleLowerCase('en-GB');
     const matchingLocations = locations.filter(({ name }) => (
       name.toLocaleLowerCase('en-GB').includes(query)
@@ -181,7 +195,7 @@ if (locationSearch && locationGroups && locationEmpty) {
     })
     .then((data) => {
       if (!Array.isArray(data)) {
-        return;
+        throw new Error('Location data is invalid.');
       }
 
       locations = data
@@ -192,11 +206,20 @@ if (locationSearch && locationGroups && locationEmpty) {
         ))
         .sort((first, second) => first.name.localeCompare(second.name, 'en-GB', { sensitivity: 'base' }));
 
+      locationLoadState = locationLoadStates.complete;
+      locationSearch.disabled = false;
+      locationGroups.setAttribute('aria-busy', 'false');
+      locationError.hidden = true;
       renderLocations();
     })
     .catch(() => {
       locations = [];
-      renderLocations();
+      locationLoadState = locationLoadStates.failed;
+      locationSearch.disabled = true;
+      locationGroups.setAttribute('aria-busy', 'false');
+      locationGroups.replaceChildren();
+      locationEmpty.hidden = true;
+      locationError.hidden = false;
     });
 }
 

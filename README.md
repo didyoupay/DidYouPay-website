@@ -8,7 +8,7 @@ The static public website for Did You Pay?, built for hosting on GitHub Pages.
 - CSS3
 - Vanilla JavaScript
 
-The project intentionally uses no frameworks or build tools. Open `index.html` in a browser to view it locally.
+The project intentionally uses no frameworks or build tools. Use a local static web server to preview the complete site, including the dynamically loaded supported-locations data.
 
 ## Pages
 
@@ -21,7 +21,9 @@ The project intentionally uses no frameworks or build tools. Open `index.html` i
 - Release notes
 - Custom 404 page
 
-Shared presentation and behaviour live in `css/style.css` and `js/script.js`. The `images` and `assets` directories are ready for future site files.
+Shared presentation and behaviour live in `css/style.css` and `js/script.js`. Approved content is recorded in `CONTENT_GUIDE.md`, design guidance lives in `DESIGN_SYSTEM.md`, supported locations are maintained in `data/locations.json`, and published branding assets live in `images/branding`.
+
+The website includes approved branding, responsive image derivatives, browser icons, automatic light and dark themes, privacy and legal pages, support information, release notes, and a custom 404 page.
 
 ## GitHub Pages
 
@@ -29,4 +31,4 @@ Configure GitHub Pages to publish from the repository's default branch and root 
 
 ## Before launch
 
-Replace the placeholder copy with approved product, support, privacy and legal information. Add the final favicon and any future visual assets when they are available.
+Replace the App Store placeholder link with the approved production URL and update the Version 1.0.0 release date when the app is released.
