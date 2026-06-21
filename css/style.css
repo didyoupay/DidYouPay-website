@@ -725,6 +725,11 @@ details > :not(summary) {
     width: 9rem;
   }
 
+  .hero .lead,
+  .hero__supporting {
+    max-width: calc(var(--layout-content-max) - (2 * var(--space-8)));
+  }
+
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
