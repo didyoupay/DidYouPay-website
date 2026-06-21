@@ -725,6 +725,14 @@ details > :not(summary) {
     width: 9rem;
   }
 
+  .hero-logo {
+    width: 17.5rem;
+  }
+
+  .hero__brand {
+    margin-bottom: var(--space-6);
+  }
+
   .hero .lead {
     max-width: var(--layout-content-max);
     text-wrap: balance;
