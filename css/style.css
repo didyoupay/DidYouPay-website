@@ -401,6 +401,10 @@ p {
   margin-top: var(--space-6);
 }
 
+.home-callout {
+  text-align: center;
+}
+
 .button {
   min-height: 3rem;
   padding: var(--space-3) var(--space-5);
