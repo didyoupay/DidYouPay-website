@@ -364,6 +364,34 @@ The app isn’t interested in tracking where you’ve been.
 
 Every installation works independently on your device, and apart from information needed to manage your current reminder, your journeys aren’t tracked or shared.
 
+### 11. Can I use Siri with Did You Pay?
+
+Yes. Did You Pay supports Siri, allowing you to create a payment reminder without opening the app.
+
+Simply say:
+
+“Siri, use Did You Pay.”
+
+Siri will immediately create a reminder called “Created with Siri” using the app’s normal reminder schedule.
+
+The next time you open the app, you can rename the reminder to anything you like, for example:
+
+- Manchester Airport
+- Merseyflow
+- Tesco
+- Dart Charge
+- Royal Preston Hospital
+
+The reminder will then appear throughout the app using the new name.
+
+Siri-created reminders:
+
+- Use the same reminder schedule as reminders created in the app.
+- Count towards the maximum of three active reminders.
+- Can be renamed at any time.
+- Can be marked as paid or postponed just like any other reminder.
+- Can use any reminder name you choose. It doesn’t need to match a location already included in Did You Pay.
+
 ### Final Support Card
 
 #### Heading
