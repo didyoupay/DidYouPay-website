@@ -122,24 +122,22 @@ const locationEmpty = document.querySelector('[data-location-empty]');
 const locationError = document.querySelector('[data-location-error]');
 
 if (locationSearch && locationGroups && locationEmpty && locationError) {
-  const locationCategories = [
-    ['Airport', 'Airports'],
-    ['Barrier-Free Car Park', 'Barrier-Free Car Parks'],
-    ['Toll Road', 'Toll Roads'],
-    ['Bridge', 'Bridges'],
-    ['Tunnel', 'Tunnels'],
-  ];
   const locationLoadStates = {
     loading: 'loading',
     complete: 'complete',
     failed: 'failed',
   };
-  const allowedCategories = new Set(locationCategories.map(([category]) => category));
-  let locations = [];
+  let locationCategories = [];
   let locationLoadState = locationLoadStates.loading;
+  let locationsWebDataPromise;
 
   locationSearch.disabled = true;
   locationGroups.setAttribute('aria-busy', 'true');
+
+  const getLocationId = (category, name) => `location-${category}-${name}`
+    .toLocaleLowerCase('en-GB')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 
   const renderLocations = () => {
     if (locationLoadState !== locationLoadStates.complete) {
@@ -147,32 +145,39 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
     }
 
     const query = locationSearch.value.trim().toLocaleLowerCase('en-GB');
-    const matchingLocations = locations.filter(({ name }) => (
-      name.toLocaleLowerCase('en-GB').includes(query)
-    ));
+    let matchingLocationCount = 0;
 
     locationGroups.replaceChildren();
 
-    locationCategories.forEach(([category, heading]) => {
-      const categoryLocations = matchingLocations.filter((location) => location.category === category);
+    locationCategories.forEach(({ category, locations }) => {
+      const matchingLocations = locations.filter(({ name }) => (
+        name.toLocaleLowerCase('en-GB').includes(query)
+      ));
 
-      if (!categoryLocations.length) {
+      if (!matchingLocations.length) {
         return;
       }
+
+      matchingLocationCount += matchingLocations.length;
 
       const group = document.createElement('details');
       const groupHeading = document.createElement('summary');
       const list = document.createElement('ul');
 
       group.className = 'location-group card';
-      group.open = true;
       groupHeading.className = 'location-group__heading';
-      groupHeading.textContent = heading;
+      groupHeading.textContent = category;
       list.className = 'location-list';
 
-      categoryLocations.forEach(({ name }) => {
+      matchingLocations.forEach(({ name }) => {
+        const locationId = getLocationId(category, name);
         const item = document.createElement('li');
-        item.textContent = name;
+        const link = document.createElement('a');
+
+        item.id = locationId;
+        link.href = `#${locationId}`;
+        link.textContent = name;
+        item.append(link);
         list.append(item);
       });
 
@@ -180,31 +185,46 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
       locationGroups.append(group);
     });
 
-    locationEmpty.hidden = matchingLocations.length > 0;
+    locationEmpty.hidden = matchingLocationCount > 0;
   };
 
   locationSearch.addEventListener('input', renderLocations);
 
-  fetch('data/locations.json')
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Location data could not be loaded.');
-      }
+  const loadLocationsWebData = () => {
+    if (!locationsWebDataPromise) {
+      locationsWebDataPromise = fetch('data/locations-web.json')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Location data could not be loaded.');
+          }
 
-      return response.json();
-    })
-    .then((data) => {
-      if (!Array.isArray(data)) {
+          return response.json();
+        });
+    }
+
+    return locationsWebDataPromise;
+  };
+
+  loadLocationsWebData()
+    .then((response) => {
+      if (!response || !Array.isArray(response.categories)) {
         throw new Error('Location data is invalid.');
       }
 
-      locations = data
-        .filter((location) => (
-          location
-          && typeof location.name === 'string'
-          && allowedCategories.has(location.category)
+      locationCategories = response.categories
+        .filter((categoryGroup) => (
+          categoryGroup
+          && typeof categoryGroup.category === 'string'
+          && Array.isArray(categoryGroup.locations)
         ))
-        .sort((first, second) => first.name.localeCompare(second.name, 'en-GB', { sensitivity: 'base' }));
+        .map((categoryGroup) => ({
+          category: categoryGroup.category,
+          locations: categoryGroup.locations.filter((location) => (
+            location
+            && typeof location.name === 'string'
+          )),
+        }))
+        .filter((categoryGroup) => categoryGroup.locations.length > 0);
 
       locationLoadState = locationLoadStates.complete;
       locationSearch.disabled = false;
@@ -213,7 +233,7 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
       renderLocations();
     })
     .catch(() => {
-      locations = [];
+      locationCategories = [];
       locationLoadState = locationLoadStates.failed;
       locationSearch.disabled = true;
       locationGroups.setAttribute('aria-busy', 'false');

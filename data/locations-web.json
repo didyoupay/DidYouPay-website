@@ -1,0 +1,133 @@
+{
+  "categories": [
+    {
+      "category": "Airports",
+      "locations": [
+        {
+          "name": "Manchester Airport"
+        },
+        {
+          "name": "Heathrow Airport"
+        },
+        {
+          "name": "Gatwick Airport"
+        },
+        {
+          "name": "Stanstead Airport"
+        },
+        {
+          "name": "London Luton Airport"
+        },
+        {
+          "name": "London City Airport"
+        },
+        {
+          "name": "East Midlands Airport"
+        },
+        {
+          "name": "Southend Airport"
+        },
+        {
+          "name": "Birmimgham Airport"
+        }
+      ]
+    },
+    {
+      "category": "Toll",
+      "locations": [
+        {
+          "name": "Dartford Crossing"
+        },
+        {
+          "name": "Mersey Gateway Bridge"
+        },
+        {
+          "name": "Silver Jubilee Bridge"
+        },
+        {
+          "name": "Tyne Tunnel"
+        },
+        {
+          "name": "Humber Bridge"
+        },
+        {
+          "name": "Warburton Toll Bridge"
+        }
+      ]
+    },
+    {
+      "category": "Train Stations",
+      "locations": [
+        {
+          "name": "Barnt Green"
+        },
+        {
+          "name": "Berkhamstead"
+        },
+        {
+          "name": "Bletchley"
+        },
+        {
+          "name": "Cheddington"
+        },
+        {
+          "name": "Coleshill Parkway"
+        },
+        {
+          "name": "Hartford"
+        },
+        {
+          "name": "Hemel Hemstead"
+        },
+        {
+          "name": "Kidderminster"
+        },
+        {
+          "name": "Kings Langley"
+        },
+        {
+          "name": "Leighton Buzzard"
+        },
+        {
+          "name": "Lichfield City"
+        },
+        {
+          "name": "Lichfield Trent Valley"
+        },
+        {
+          "name": "Miton Keynes Central"
+        },
+        {
+          "name": "Northampton"
+        },
+        {
+          "name": "Nuneaton"
+        },
+        {
+          "name": "Redditch"
+        },
+        {
+          "name": "Stratford-upon-Avon"
+        },
+        {
+          "name": "Tamworth"
+        },
+        {
+          "name": "Telford"
+        },
+        {
+          "name": "Tring"
+        },
+        {
+          "name": "Watford Junction"
+        },
+        {
+          "name": "Wolverton"
+        },
+        {
+          "name": "Wolverhampton"
+        }
+      ]
+    }
+  ]
+}

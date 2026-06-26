@@ -21,7 +21,7 @@ The project intentionally uses no frameworks or build tools. Use a local static 
 - Release notes
 - Custom 404 page
 
-Shared presentation and behaviour live in `css/style.css` and `js/script.js`. Approved content is recorded in `CONTENT_GUIDE.md`, design guidance lives in `DESIGN_SYSTEM.md`, supported locations are maintained in `data/locations.json`, and published branding assets live in `images/branding`.
+Shared presentation and behaviour live in `css/style.css` and `js/script.js`. Approved content is recorded in `CONTENT_GUIDE.md`, design guidance lives in `DESIGN_SYSTEM.md`, supported locations are maintained in `data/locations-web.json`, and published branding assets live in `images/branding`.
 
 The website includes approved branding, responsive image derivatives, browser icons, automatic light and dark themes, privacy and legal pages, support information, release notes, and a custom 404 page.
 
