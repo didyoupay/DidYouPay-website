@@ -612,11 +612,6 @@ details > :not(summary) {
   margin-bottom: 0;
 }
 
-.location-search {
-  max-width: 32rem;
-  margin-top: var(--space-6);
-}
-
 .location-map {
   margin-top: var(--space-6);
   overflow: hidden;

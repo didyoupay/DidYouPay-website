@@ -116,45 +116,19 @@ if (faqItems.length) {
   });
 }
 
-const locationSearch = document.querySelector('[data-location-search]');
 const locationGroups = document.querySelector('[data-location-groups]');
-const locationEmpty = document.querySelector('[data-location-empty]');
 const locationError = document.querySelector('[data-location-error]');
 
-if (locationSearch && locationGroups && locationEmpty && locationError) {
-  const locationLoadStates = {
-    loading: 'loading',
-    complete: 'complete',
-    failed: 'failed',
-  };
+if (locationGroups && locationError) {
   let locationCategories = [];
-  let locationLoadState = locationLoadStates.loading;
   let locationsWebDataPromise;
 
-  locationSearch.disabled = true;
   locationGroups.setAttribute('aria-busy', 'true');
 
   const renderLocations = () => {
-    if (locationLoadState !== locationLoadStates.complete) {
-      return;
-    }
-
-    const query = locationSearch.value.trim().toLocaleLowerCase('en-GB');
-    let matchingLocationCount = 0;
-
     locationGroups.replaceChildren();
 
     locationCategories.forEach(({ category, locations }) => {
-      const matchingLocations = locations.filter(({ name }) => (
-        name.toLocaleLowerCase('en-GB').includes(query)
-      ));
-
-      if (!matchingLocations.length) {
-        return;
-      }
-
-      matchingLocationCount += matchingLocations.length;
-
       const group = document.createElement('details');
       const groupHeading = document.createElement('summary');
       const list = document.createElement('ul');
@@ -164,7 +138,7 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
       groupHeading.textContent = category;
       list.className = 'location-list';
 
-      matchingLocations.forEach(({ name }) => {
+      locations.forEach(({ name }) => {
         const item = document.createElement('li');
 
         item.textContent = name;
@@ -174,11 +148,7 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
       group.append(groupHeading, list);
       locationGroups.append(group);
     });
-
-    locationEmpty.hidden = matchingLocationCount > 0;
   };
-
-  locationSearch.addEventListener('input', renderLocations);
 
   const loadLocationsWebData = () => {
     if (!locationsWebDataPromise) {
@@ -216,19 +186,14 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
         }))
         .filter((categoryGroup) => categoryGroup.locations.length > 0);
 
-      locationLoadState = locationLoadStates.complete;
-      locationSearch.disabled = false;
       locationGroups.setAttribute('aria-busy', 'false');
       locationError.hidden = true;
       renderLocations();
     })
     .catch(() => {
       locationCategories = [];
-      locationLoadState = locationLoadStates.failed;
-      locationSearch.disabled = true;
       locationGroups.setAttribute('aria-busy', 'false');
       locationGroups.replaceChildren();
-      locationEmpty.hidden = true;
       locationError.hidden = false;
     });
 }
