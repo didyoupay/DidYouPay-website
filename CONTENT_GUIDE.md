@@ -96,7 +96,7 @@ Download on the App Store
 
 #### Heading
 
-Why install Did You Pay? now?
+Install Did You Pay? before you need it
 
 #### Message
 
@@ -209,6 +209,16 @@ Supported Locations
 #### Introduction
 
 Did You Pay? supports a growing range of UK locations where payment is made after you leave.
+
+### Supported Locations Map
+
+#### Heading
+
+Supported locations map
+
+#### Helper Text
+
+View the locations currently supported by Did You Pay?.
 
 ### Search
 
