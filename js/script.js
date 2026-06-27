@@ -134,11 +134,6 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
   locationSearch.disabled = true;
   locationGroups.setAttribute('aria-busy', 'true');
 
-  const getLocationId = (category, name) => `location-${category}-${name}`
-    .toLocaleLowerCase('en-GB')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-
   const renderLocations = () => {
     if (locationLoadState !== locationLoadStates.complete) {
       return;
@@ -170,14 +165,9 @@ if (locationSearch && locationGroups && locationEmpty && locationError) {
       list.className = 'location-list';
 
       matchingLocations.forEach(({ name }) => {
-        const locationId = getLocationId(category, name);
         const item = document.createElement('li');
-        const link = document.createElement('a');
 
-        item.id = locationId;
-        link.href = `#${locationId}`;
-        link.textContent = name;
-        item.append(link);
+        item.textContent = name;
         list.append(item);
       });
 

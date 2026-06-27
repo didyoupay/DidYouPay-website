@@ -659,23 +659,10 @@ details > :not(summary) {
 }
 
 .location-list li {
+  padding: var(--space-3) var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-small);
   background: var(--color-surface-raised);
-}
-
-.location-list a {
-  min-height: var(--tap-target);
-  padding: var(--space-3) var(--space-4);
-  display: flex;
-  align-items: center;
-  color: var(--color-text-primary);
-  font-weight: 650;
-  text-decoration: none;
-}
-
-.location-list a:hover {
-  color: var(--color-primary);
 }
 
 .location-empty {
