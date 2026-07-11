@@ -15,6 +15,8 @@ The project intentionally uses no frameworks or build tools. Use a local static 
 - Home
 - Frequently asked questions
 - Supported locations
+- Tutorials
+- Getting Started tutorial
 - Privacy
 - Terms of use
 - Contact

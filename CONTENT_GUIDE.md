@@ -260,6 +260,232 @@ Let us know and we’ll look into whether we can add it.
 
 locations@didyoupay.co.uk
 
+## Tutorials
+
+### Tutorials Landing Page
+
+#### Page Header
+
+##### Title
+
+Tutorials
+
+##### Introduction
+
+Helpful guides for setting up and using Did You Pay?.
+
+### Tutorial Cards
+
+#### Getting Started
+
+##### Description
+
+Set up Did You Pay? and make sure everything is configured correctly.
+
+##### Button
+
+View Tutorial
+
+#### How to Make Did You Pay? Work for You
+
+##### Description
+
+Learn how to get the most from Did You Pay? with practical tips and recommended ways to use the app.
+
+##### Button
+
+Coming Soon
+
+### Getting Started Tutorial
+
+#### Page Header
+
+##### Title
+
+Getting Started
+
+##### Introduction
+
+Set up Did You Pay? and make sure everything is configured correctly.
+
+### Getting Started Steps
+
+#### Step 1
+
+##### Heading
+
+Open the Get Started checklist
+
+##### Body
+
+Did You Pay? asks for location access so it can recognise when you visit selected locations.
+
+For reliable reminders, location should be set to Always, which is a two-step process.
+
+Step 1 - Tap Enable Location Access.
+
+#### Step 2
+
+##### Heading
+
+Allow location access
+
+##### Body
+
+Select Allow While Using App.
+
+#### Step 3
+
+##### Heading
+
+Open app settings if needed
+
+##### Body
+
+Did You Pay? needs location settings to be set to Always so that it can send you a reminder when you are in a selected location.
+
+Tap Open App Settings.
+
+#### Step 4
+
+##### Heading
+
+Review the Location setting
+
+##### Body
+
+Tap Location While Using.
+
+#### Step 5
+
+##### Heading
+
+Choose Always location access
+
+##### Body
+
+Select Always and keep Precise Location turned on.
+
+This helps Did You Pay? recognise selected locations even when the app is not open.
+
+#### Step 6
+
+##### Heading
+
+Confirm location access is complete
+
+##### Body
+
+Return to Did You Pay? and check that Location Access is marked complete.
+
+Next, tap Enable Notifications.
+
+#### Step 7
+
+##### Heading
+
+Allow notifications
+
+##### Body
+
+Did You Pay? uses notifications to send payment reminders at the right time.
+
+Allow notifications when prompted so reminders can appear on your iPhone.
+
+#### Step 8
+
+##### Heading
+
+Review recommended notification settings
+
+##### Body
+
+After notifications are enabled, Did You Pay? shows recommended iPhone notification settings.
+
+These settings help reminders stay visible until you have had a chance to act on them.
+
+Tap Open Notification Settings.
+
+#### Step 9
+
+##### Heading
+
+Check notification settings
+
+##### Body
+
+Not all the suggested settings may be available as they are iPhone and iOS version dependent.
+
+Set the settings that are available as per the suggestions.
+
+#### Step 10
+
+##### Heading
+
+Choose locations
+
+##### Body
+
+The next required step is to choose at least one supported location where you want automatic payment reminders.
+
+#### Step 11
+
+##### Heading
+
+Find a location
+
+##### Body
+
+You can search for the location if you know it is one of the supported locations.
+
+#### Step 12
+
+##### Heading
+
+Or select your location
+
+##### Body
+
+Choose the location you want Did You Pay? to use for reminders.
+
+The selected location appears at the top of the screen.
+
+#### Step 13
+
+##### Heading
+
+Return to the Home screen
+
+##### Body
+
+On returning to the Home Screen select Continue Setup.
+
+#### Step 14
+
+##### Heading
+
+Review optional setup steps
+
+##### Body
+
+Did You Pay? also includes optional setup steps for a payment reminder location and the Home Screen widget.
+
+You can complete these now or choose to do them later.
+
+**These optional setup steps will remain available on the Getting Started card on the Home screen until you've completed or dismissed them.**
+
+#### Step 15
+
+##### Heading
+
+Check app status
+
+##### Body
+
+When setup is complete, the Home screen shows App Status as correctly configured.
+
+Your selected location remains visible, and payment reminders will appear on the Home screen when they are created.
+
 ## FAQ
 
 ### Page Header

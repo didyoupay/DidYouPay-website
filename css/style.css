@@ -690,6 +690,46 @@ details > :not(summary) {
   margin: 0;
 }
 
+.tutorial-intro {
+  margin-inline: auto;
+}
+
+.tutorial-steps {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.tutorial-step {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.tutorial-image {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: var(--color-surface-raised);
+}
+
+.tutorial-image img {
+  width: 100%;
+  height: auto;
+}
+
+.tutorial-content {
+  max-width: 38rem;
+}
+
+.tutorial-step-number {
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
@@ -765,6 +805,15 @@ details > :not(summary) {
 
   .location-map iframe {
     height: 37.5rem;
+  }
+
+  .tutorial-step {
+    grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1fr);
+    gap: var(--space-8);
+  }
+
+  .tutorial-image {
+    max-width: 26rem;
   }
 
   .card-grid {
