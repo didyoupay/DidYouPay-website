@@ -704,6 +704,10 @@ details > :not(summary) {
   margin-inline: auto;
 }
 
+.work-for-you-intro h1 {
+  text-wrap: wrap;
+}
+
 .tutorial-steps {
   display: grid;
   gap: var(--space-8);
