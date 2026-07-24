@@ -735,6 +735,10 @@ The app is intended to minimise the amount of information it uses while still pr
 
 Did You Pay? does not require you to create an account.
 
+Did You Pay? does not collect personal data.
+
+The app has no developer-operated servers, uses no analytics, uses no advertising, performs no tracking and does not automatically transmit diagnostics.
+
 The app does not ask for your:
 
 * Name
@@ -743,13 +747,17 @@ The app does not ask for your:
 * Telephone number
 * Payment details
 
+The app uses local notifications to deliver payment reminders on your device.
+
 The only permissions requested are those required for the app to provide reminder functionality, such as location access and notifications.
 
 #### Location Permissions
 
-Did You Pay? uses your device’s location only to recognise when you visit one of the locations you have selected within the app.
+Did You Pay? uses your device’s location only to support reminder functionality, including recognising when you visit one of the locations you have selected within the app.
 
 This allows the app to offer you a reminder that you may need to make a payment later.
+
+If you choose to set a Payment Location, Did You Pay? may use Apple system services to obtain a readable name for that location. Did You Pay? does not send this information to its own servers, and the developer does not receive or store the location or the resulting name.
 
 The app does not use your location to build a history of your journeys or to monitor your movements.
 
@@ -759,7 +767,7 @@ Location permissions can be changed at any time through your device’s settings
 
 Your selected locations and reminders are stored on your device.
 
-Did You Pay? does not require user accounts or cloud synchronisation for its core functionality. As a result, your selected locations and reminders remain on your device and are not uploaded to our servers.
+Did You Pay? does not require user accounts or cloud synchronisation for its core functionality. As a result, your selected locations and reminders remain on your device and are not uploaded to developer-operated servers.
 
 The app does not build a history of where you have travelled or keep a permanent record of every reminder that has been triggered.
 
@@ -773,7 +781,7 @@ Did You Pay? does not share your location history.
 
 Did You Pay? does not use your information for advertising.
 
-Because Did You Pay? does not require servers to operate its core reminder functionality, your selected locations and reminders are not transmitted to us as part of the normal operation of the app.
+Because Did You Pay? has no developer-operated servers, your selected locations, reminders, reminder history and location history are not transmitted to us as part of the normal operation of the app.
 
 #### Advertising
 
